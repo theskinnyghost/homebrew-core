@@ -1,4 +1,4 @@
-class Composer < Formula
+class ComposerAT207 < Formula
   desc "Dependency Manager for PHP"
   homepage "https://getcomposer.org/"
   url "https://getcomposer.org/download/2.0.7/composer.phar"
