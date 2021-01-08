@@ -13,7 +13,7 @@ class ComposerAT11015 < Formula
   bottle :unneeded
 
   def install
-    bin.install "composer.phar" => "composer1"
+    bin.install "composer.phar" => "composer"
   end
 
   test do
@@ -59,7 +59,7 @@ class ComposerAT11015 < Formula
       echo Greetings::sayHelloWorld();
     EOS
 
-    system "#{bin}/composer1", "install"
+    system "#{bin}/composer", "install"
     assert_match /^HelloHomebrew$/, shell_output("php tests/test.php")
   end
 end
